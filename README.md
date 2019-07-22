@@ -22,7 +22,9 @@ Download Buildroot and depedencies
 https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
 
   3. Download Windows Prolific serial console driver version 3.3. 
+  
      a. 3.8 version that comes with Windows is BUGGY
+     
      b. It will show Yellow exclamation mark and serial console shall not be detected
   4. Download PUTTY to connect to PI
   5. Download HDDRawCopy1.10Portable from hddguru.com to flash image to PI sdcard
