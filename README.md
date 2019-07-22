@@ -10,13 +10,16 @@ Introduction
 
 In this project we shall do the following
   1. Build linux systems for Raspberry Pi 3 using Buildroot
+  
   2. Connect Raspberry Pi 3 using USB to TTL cable on Windows 10 (3.3 driver version, 3.8 doesn't work)
+  
   3. Configure network interface to connect via RJ45 cable
 
 Download Buildroot and depedencies
 ----------------------------------
 
   1. Read buildroot manual and install all dependencies in Ubuntu
+  
   2. Download buildroot LTS version from
 
 https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
@@ -36,8 +39,11 @@ https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
   <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/raspberrypi3_gpio_diagram.jpg?raw=true" width="320"/>
   <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/raspberrypi3_usb_ttl.jpg?raw=true" width="640"/>
 </p>
+
   4. Download PUTTY to connect to PI
+  
   5. Download HDDRawCopy1.10Portable from hddguru.com to flash image to PI sdcard
+  
   6. USB to TTL serial cable.
 
 Configure Buildroot
