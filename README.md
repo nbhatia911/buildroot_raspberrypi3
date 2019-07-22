@@ -31,7 +31,17 @@ https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
      a. 3.8 version that comes with Windows is BUGGY
      
      b. It will show Yellow exclamation mark and serial console shall not be detected
-     
+
+
+<pre>
+STEPS TO CONFIGURE 3.3 DRIVER VERSION IN WINDOWS
+- Select Prolific COM3 driver in Device Manager and click on Properties
+- Update driver
+- Browse my computer for driver software
+- Let me pick from a list of available drivers
+- Select Version 3.3.11.152
+</pre>
+
 <p align="center">
   <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/01_device_manager.png?raw=true" width="320"/>
   <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/02_device_manager.png?raw=true" width="320"/>
