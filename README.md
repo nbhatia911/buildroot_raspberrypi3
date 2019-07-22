@@ -35,6 +35,7 @@ Configure Buildroot
 
   1. Untar buildroot-2019.02.4.tar.gz. Below are the folders you should see
   
+<pre>
 utils
 toolchain
 system
@@ -47,26 +48,30 @@ boot
 board
 arch
 docs
+</pre>
   
   2. Run below cmd to load RPI config.
 
+<pre>
   $ make raspberrypi3_64_defconfig #loads rpi config
   $ make menuconfig #select modules to install and save
+</pre>
   
   3. .config file shall be generated, verify BR2_ROOTFS_POST_BUILD_SCRIPT is set. If not then image for flashing shall not be generated
   
   4. Download all sources first and run make. This will download everything needed for offline compilation to dl/ folder
-  
+<pre> 
   $ make source 
   $ make
-  
+</pre>
+
 
   
 Result of the build
 -------------------
 
 After building, images shall be created in output folder as below. 
-  
+<pre> 
 output/images/
 output/images/bcm2710-rpi-3-b.dtb
 output/images/boot.vfat
@@ -83,6 +88,7 @@ output/images/bcm2837-rpi-3-b.dtb
 output/images/rootfs.ext4
 output/images/Image
 output/images/rootfs.ext2
+</pre>
 
   
  
@@ -94,7 +100,9 @@ Once the build process is finished you will have an image called "sdcard.img" in
 Use sdcard.img to flash using HDD tool
 On Ubuntu copy the bootable "sdcard.img" onto an SD card with "dd":
 
+<pre>
   $ sudo dd if=output/images/sdcard.img of=/dev/sdX
+</pre>
 
 Insert the SDcard into your Raspberry Pi, and power it up. Your new system
 should come up now and start two consoles: one on the serial port on
@@ -107,17 +115,19 @@ How to connect serial cable
 Serial cable will have Red, Black, Green and White
 
 Standary connectivity is as below. Red is free, DO NOT connect it.
-
+<pre>
 PIN NO     CABLE COLOR  
 6      -   Ground Black
 8      -   TX White
 10     -   RX Green
+</pre>
 
 
 It is possible that White and Green are reversed, so try reversing if you see no output on PUTTY
 
 Linux Boot Output from Serial Console
 -------------------------------------
+<pre>
 [    0.000000] Booting Linux on physical CPU 0x0
 [    0.000000] Linux version 4.14.95-v8 (root@tpi-ubuntu16-04-5) (gcc version 7.4.0 (Buildroot 2019.02.4)) #1 SMP PREEMPT Sun Jul 21 16:11:39 IST 2019
 [    0.000000] Boot CPU: AArch64 Processor [410fd034]
@@ -125,6 +135,7 @@ Linux Boot Output from Serial Console
 [    0.000000] CPU features: enabling workaround for ARM erratum 845719
 [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 232848
 [    0.000000] Kernel command line: 8250.nr_uarts=1 bcm2708_fb.fbwidth=720 bcm2708_fb.fbheight=480 bcm2708_fb.fbswap=1 smsc95xx.macaddr=B8:27:EB:79:F5:8B vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  root=/dev/mmcblk0p2 rootwait console=tty1 console=ttyS0,115200
+</pre>
 
 
 
@@ -132,6 +143,9 @@ Linux Boot Output from Serial Console
 
 OUTPUT FROM RASPBERRY PI 3 SHELL
 --------------------------------
+
+<pre>
+
 ~] cat /etc/*rel*
 NAME=Buildroot
 VERSION=2019.02.4
@@ -178,4 +192,5 @@ CPU architecture: 8
 CPU variant     : 0x0
 CPU part        : 0xd03
 CPU revision    : 4
+</pre>
 
