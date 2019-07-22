@@ -10,7 +10,7 @@ Introduction
 
 In this project we shall do the following
   1. Build linux systems for Raspberry Pi 3 using Buildroot
-  2. Connect Raspberry Pi 3 using USB to TTL cable on Windows 10
+  2. Connect Raspberry Pi 3 using USB to TTL cable on Windows 10 (3.3 driver version, 3.8 doesn't work)
   3. Configure network interface to connect via RJ45 cable
 
 Download Buildroot and depedencies
