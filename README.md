@@ -21,11 +21,21 @@ Download Buildroot and depedencies
 
 https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
 
-  3. Download Windows Prolific serial console driver version 3.3. 
+  3. Download Windows Prolific serial console driver version 3.3 and install it as below
   
      a. 3.8 version that comes with Windows is BUGGY
      
      b. It will show Yellow exclamation mark and serial console shall not be detected
+     
+<p align="center">
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/01_device_manager.png?raw=true" width="320"/>
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/02_device_manager.png?raw=true" width="320"/>
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/03_device_manager.png?raw=true" width="320"/>
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/04_device_manager.png?raw=true" width="320"/>
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/05_device_manager.png?raw=true" width="320"/>
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/raspberrypi3_gpio_diagram.jpg?raw=true" width="320"/>
+  <img src="https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/raspberrypi3_usb_ttl.jpg?raw=true" width="640"/>
+</p>
   4. Download PUTTY to connect to PI
   5. Download HDDRawCopy1.10Portable from hddguru.com to flash image to PI sdcard
   6. USB to TTL serial cable.
