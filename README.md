@@ -19,6 +19,8 @@ Download Buildroot and depedencies
 ----------------------------------
 
   1. Read buildroot manual and install all dependencies in Ubuntu
+
+https://buildroot.org/downloads/manual/manual.html#requirement
   
   2. Download buildroot LTS version from
 
@@ -41,10 +43,14 @@ https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
 </p>
 
   4. Download PUTTY to connect to PI
-  
+
+https://www.putty.org
+
   5. Download HDDRawCopy1.10Portable from hddguru.com to flash image to PI sdcard
-  
-  6. USB to TTL serial cable.
+
+https://hddguru.com/software/HDD-Raw-Copy-Tool/HDDRawCopy1.10Portable.exe
+
+  6. Get USB to TTL serial cable from Amazon
 
 Configure Buildroot
 ------------------
@@ -113,17 +119,15 @@ How to write the SD card
 
 Once the build process is finished you will have an image called "sdcard.img" in the output/images/ directory.
 
-Use sdcard.img to flash using HDD tool
+On Windows use sdcard.img to flash using HDD tool
+
 On Ubuntu copy the bootable "sdcard.img" onto an SD card with "dd":
 
 <pre>
   $ sudo dd if=output/images/sdcard.img of=/dev/sdX
 </pre>
 
-Insert the SDcard into your Raspberry Pi, and power it up. Your new system
-should come up now and start two consoles: one on the serial port on
-the P1 header, one on the HDMI output where you can login using a USB
-keyboard.
+Insert the SDcard into your Raspberry Pi, and power it up. Your new system should come up now and start two consoles: one on the serial port on the P1 header, one on the HDMI output where you can login using a USB keyboard.
 
 How to connect serial cable
 ---------------------------
