@@ -83,7 +83,7 @@ output/images/rootfs.ext2
   
  
 How to write the SD card
-========================
+------------------------
 
 Once the build process is finished you will have an image called "sdcard.img" in the output/images/ directory.
 
