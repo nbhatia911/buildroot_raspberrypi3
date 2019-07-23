@@ -27,7 +27,9 @@ https://buildroot.org/downloads/manual/manual.html#requirement
 https://buildroot.org/downloads/buildroot-2019.02.4.tar.gz
 
   3. Download Windows Prolific serial console driver version 3.3 and install it as below
-  
+ 
+https://github.com/nbhatia911/buildroot_raspberrypi3/blob/master/Downloads/SW-1301_v1.2.1.zip
+ 
      a. 3.8 version that comes with Windows is BUGGY
      
      b. It will show Yellow exclamation mark and serial console shall not be detected
