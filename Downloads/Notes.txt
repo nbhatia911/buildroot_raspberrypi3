@@ -1,0 +1,13 @@
+iface eth0 inet static
+    address 1.2.3.4
+    netmask 255.255.255.0
+
+Use PUTTY to connect to serial console
+
+In theory, the cable should be as in A, but turns out to be like B:
+              A     APurpose  |     B  BPurpose
+Wire color   red      5v      |        5v
+             black   GND      |        GND 
+             white   TXD      |        RXD
+             green   RXD      |        TXD
+
